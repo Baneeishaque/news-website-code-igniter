@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="news" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" singleton="false" document_root="$PROJECT_DIR$" port="8000">
+    <method v="2" />
+  </configuration>
+  <configuration default="false" name="news" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" singleton="false" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" server_name="Built-in Web Server" start_url="/news/">
+    <method v="2" />
+  </configuration>
+</component>
