@@ -1,6 +1,6 @@
-image: baneeishaque/gp-vnc-tint2-pcman-zsh-as-gh-chrome-idea-pycharm-conda3-hb-scrcpy-r-jupyter-lfs-7z-zilla-gram-matlab
+image: baneeishaque/gp-vnc-tint2-pcman-zsh-as-gh-chrome-idea-pycharm-conda3-hb-scrcpy-r-jupyter-lfs-7z-zilla-gram-matlab-mysql
 
-# tasks:
+tasks:
   # - init: /usr/bin/start-vnc-session.sh
   # - command: zsh
   # - command: git clone --depth 1 "https://github.com/Baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-android-studio.git" android-studio-config && mkdir -p ~/.config/Google && ln -s `pwd`/android-studio-config/AndroidStudio4.1-config ~/.config/Google/AndroidStudio4.1 && mkdir -p ~/.local/share/Google && ln -s `pwd`/android-studio-config/AndroidStudio4.1-local ~/.local/share/Google/AndroidStudio4.1 && cd /usr/local/android-studio/bin/ && ./studio.sh
@@ -15,6 +15,7 @@ image: baneeishaque/gp-vnc-tint2-pcman-zsh-as-gh-chrome-idea-pycharm-conda3-hb-s
   # - command: git clone --depth 1 https://github.com/Baneeishaque/configuartions-private.git config && cd /usr/local/FileZilla3/bin/ && ./filezilla
   # - command: cd /usr/local/Telegram/ && ./Telegram
   # - command: cd /usr/local/MATLAB/R2021a/bin && ./matlab
+  - command: php -S 0.0.0.0:8000 
   
 # Ports to expose on workspace startup
 ports:
@@ -32,6 +33,8 @@ ports:
     onOpen: ignore
   - port: 8599
     onOpen: ignore
+  - port: 8000
+    onOpen: open-preview
 
 github:
   prebuilds:
