@@ -1,4 +1,4 @@
-image: baneeishaque/gp-vnc-pcman-zsh-as-gh-chrome-idea-pycharm-conda3-hb-scrcpy-r-jupyter-lfs-7z-zilla-gram-matlab-mysql
+image: baneeishaque/gp-vnc-pcman-zsh-as-gh-chrome-idea-pycharm-conda3-hb-scrcpy-r-lfs-zilla-gram-matlab-mysql-phpstorm
 
 tasks:
   # - init: /usr/bin/start-vnc-session.sh
@@ -16,6 +16,7 @@ tasks:
   # - command: cd /usr/local/Telegram/ && ./Telegram
   # - command: cd /usr/local/MATLAB/R2021a/bin && ./matlab
   # - command: mysql
+  # - command: git clone --depth 1 "https://github.com/Baneeishaque/gp-vnc-pcman-zsh-as-gh-chrome-idea-pycharm-conda3-hb-scrcpy-r-lfs-zilla-gram-matlab-mysql-phpstorm.git" phpstorm-config && mkdir -p ~/.config/JetBrains && ln -s `pwd`/phpstorm-config/PhpStorm2021.1-config ~/.config/JetBrains/PhpStorm2021.1 && mkdir -p ~/.local/share/JetBrains && ln -s `pwd`/phpstorm-config/PhpStorm2021.1-local ~/.local/share/JetBrains/PhpStorm2021.1 && cd /usr/local/PhpStorm-211.7142.44/bin/ && ./phpstorm.sh
   - init: mysql --execute="CREATE DATABASE IF NOT EXISTS news" && mysql news < news.sql
   - command: php -S 0.0.0.0:8000 
   
