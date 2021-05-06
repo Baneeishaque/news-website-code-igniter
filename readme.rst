@@ -1,3 +1,7 @@
+.. image:: https://gitpod.io/button/open-in-gitpod.svg
+    :alt: Open in Gitpod
+    :target: https://gitpod.io/#https://github.com/baneeishaque/news-website-code-igniter
+
 ###################
 What is CodeIgniter
 ###################
